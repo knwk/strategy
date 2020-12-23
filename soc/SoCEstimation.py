@@ -20,7 +20,7 @@ class CoulombCounter:
 	'''
 	def __init__(self):
 		self.energy_available = 0
-		self.pack_energy = 36 * 36 * 3.45 *3.635 #36S * 36P * 3.45Ah * 3.635V = 16 252.812 Wh
+		self.pack_energy = 36 * 36 * 3.45 * 3.635 #36S * 36P * 3.45Ah * 3.635V = 16 252.812 Wh
 		self.SoC = self.energy_available / self.pack_energy
 		self.maxSoC = 1 #the value of self.SoC when at 100% full
 		self.PackEff = PackEfficiency()
@@ -55,7 +55,7 @@ class CoulombCounter:
 		print(power_total)
 		
 		#total energy in Wh
-		energy = power_total * time_S/3600
+		energy = power_total * time_S / 3600
 		
 		#discharge
 		self.energy_available -= energy

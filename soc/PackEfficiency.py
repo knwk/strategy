@@ -46,7 +46,7 @@ class PackEfficiency:
 		print("Current Draw: {}".format(current_draw))
 		
 		#this power loss is wasted as heat through the resistive elements
-		power_loss = (current_draw**2)*self.pack_resistance
+		power_loss = (current_draw ** 2) * self.pack_resistance
 		
 		#the power drawn from the cell itself (before resistive losses from internal resistance), the actual power draw for SoC estimation
 		power_inside_pack = power_outside_pack_W + power_loss

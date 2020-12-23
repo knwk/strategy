@@ -20,6 +20,32 @@ fName = "CellDataFileTestMJ1.txt"
 # fName = r"C:\Users\micke\Documents\MSXIV\Strategy\SoC_Algorithm_Round2\CellDataFileTestMJ1.txt"
 
 class SoC_OCV:
+	# y = m * x + b
+	def linear_func(self, m, x, b):
+		return m * x + b
+	# x = [x1, x2, ... , x8]
+	# y = [y1, y2, ... , y8]
+
+	def connect_points(x1, y1, x2, y2):
+		m = (y2 - y1) / (x2-x1)
+		
+	# def __init__:
+	# 	pass in data
+	# 	connect points between what we have
+	# 	connect_points => m, b
+	# 	m ,b => slopes, y_ints array
+	
+	# def get_cell_ocv:
+	# 	this SOC -> OCV 
+
+	# how do we check which m/b to use
+	# dict = {
+		#x: y
+	# }
+	# slopes = [m1, m2, m3, ..., m8]
+	# y_ints = [b1, b2, b3, ..., b8]
+	# linear_func(mx, OCV, bx) = SOC
+
 	def __init__(self):
 		#includes 0.050 cell and 0.035 cable, from tests done on single cell
 		#This is the Resistance present when the chg-discharge curve was done, not the pack resistance
